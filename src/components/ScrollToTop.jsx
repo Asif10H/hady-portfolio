@@ -6,7 +6,8 @@ const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.scrollY > 300) {
+    const scrollThreshold = window.innerHeight / 2;
+    if (window.scrollY > scrollThreshold) {
       setVisible(true);
     } else {
       setVisible(false);
@@ -27,12 +28,14 @@ const ScrollToTop = () => {
 
   return (
     <>
-      <div
-        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-sky-600 text-white p-4 rounded-full cursor-pointer shadow-lg hover:bg-sky-700 transition-colors duration-300 z-50"
-        onClick={scrollToTop}
-      >
-        <FontAwesomeIcon icon={faArrowUp} size="lg" />
-      </div>
+      {visible && (
+        <div
+          onClick={scrollToTop}
+          className="fixed bottom-4 md:bottom-8 right-4 md:right-8 bg-sky-600 text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-sky-700 transition-colors duration-300 z-50"
+        >
+          <FontAwesomeIcon icon={faArrowUp} size="lg" />
+        </div>
+      )}
     </>
   );
 };
