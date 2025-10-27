@@ -6,6 +6,7 @@ import Available from "./pages/Available.jsx";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer.jsx";
 const App = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </div>
   );
 };
