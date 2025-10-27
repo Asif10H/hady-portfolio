@@ -3,7 +3,7 @@ import profileImage from "../assets/images/personal-image/hadi-pro.jpeg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import artData from "../assets/data/artData.json";
-
+import ScrollToTop from "../components/ScrollToTop";
 const images = import.meta.glob(
   "../assets/images/gallery/*.{jpg,jpeg,png,svg}",
   { eager: true }
@@ -102,6 +102,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <ScrollToTop />
     </div>
   );
 };

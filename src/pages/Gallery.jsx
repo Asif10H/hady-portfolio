@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ScrollToTop from "../components/ScrollToTop";
 import artData from "../assets/data/artData.json";
 
 const images = import.meta.glob(
@@ -23,9 +24,9 @@ const Available = () => {
   return (
     <div className="px-8">
       <div className="my-12">
-        <h1 class="text-3xl font-bold text-center mb-8">
-            <span class="bg-sky-600 rounded-md text-white px-3 py-1">Hady's</span>
-            Art Gallery
+        <h1 className="text-3xl font-bold text-center mb-8">
+          <span className="bg-sky-600 rounded-md text-white px-3 py-1">Hady's</span>
+          <span className="px-3">Art Gallery</span>
         </h1>
       </div>
 
@@ -63,11 +64,11 @@ const Available = () => {
               <p className="text-slate-500 text-lg mt-3">
                 {art.imageDescription}
               </p>
-              
             </div>
           </motion.div>
         ))}
       </div>
+      <ScrollToTop />
     </div>
   );
 };
