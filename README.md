@@ -1,7 +1,7 @@
  # Hady’s Portfolio — Project Setup Guide
 
- ## Demo Link(Hady’s Portfolio)
-[Demo Link]( https://hm-hady.netlify.app/)
+## Demo Link (Hady’s Portfolio)
+<a href="https://hm-hady.netlify.app/" target="_blank">Demo Link</a>
 
 ## Project Initialization
 ```bash
