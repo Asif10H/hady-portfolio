@@ -32,22 +32,15 @@ const Home = () => {
             />
           </div>
           <div className="text-center lg:text-left">
-            {/* <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
-              HM Hady
-            </h1> */}
-
             <h1 className="relative inline-block text-4xl lg:text-5xl font-bold text-gray-800 pb-3">
               HM Hady
               <svg
-                className="absolute left-0 bottom-0 w-full"
+                className="absolute left-0 bottom-0 lg:-bottom-3 w-full"
                 viewBox="0 0 200 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="
-                  M5 15 
-                  Q 60 5 120 15 
-                  T 195 15 200"
+                  d="M 5 15 Q 100 3 195 15"
                   stroke="#2584F6"
                   strokeWidth="7"
                   fill="transparent"
@@ -56,7 +49,7 @@ const Home = () => {
               </svg>
             </h1>
 
-            <h2 className="text-2xl text-gray-600 mt-2 font-semibold bg-gradient-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
+            <h2 className="text-2xl text-gray-600 mt-3 font-semibold bg-gradient-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
               Artist & Architecture Student
             </h2>
             <p className="font-serif text-lg text-gray-700 leading-relaxed max-w-prose mx-auto lg:mx-0 mt-6">
