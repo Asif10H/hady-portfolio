@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white shadow-lg flex flex-col items-start space-y-4 px-4 py-4 lg:hidden">
+                <div className="absolute top-16 left-0 w-full bg-white shadow-lg flex flex-col items-start space-y-4 px-8 py-4 p-4 lg:hidden">
                     <Link className="uppercase font-semibold hover:text-blue-600" to="/" onClick={() => setOpen(false)}>
                         Home
                     </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <Link className="uppercase font-semibold hover:text-blue-600" to="/about" onClick={() => setOpen(false)}>
                         About
                     </Link>
-                    <Link className="uppercase font-semibold hover:text-blue-600" to="/contact" onClick={() => setOpen(false)}>
+                    <Link className="border-2 rounded-2xl p-1 bg-sky-600 text-white uppercase font-semibold hover:bg-sky-700" to="/contact" onClick={() => setOpen(false)}>
                         Contact
                     </Link>
                 </div>
