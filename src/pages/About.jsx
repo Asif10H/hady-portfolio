@@ -5,20 +5,20 @@ import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div>
-            <section class="lg:mx-28 p-2">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="m-2 p-4">
-                        <h1 class="mb-6 text-3xl font-bold uppercase text-center lg:text-left">
+            <section className="lg:mx-28 p-2">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                    <div className="m-2 p-4">
+                        <h1 className="mb-6 text-3xl font-bold uppercase text-center lg:text-left">
                             about me
                         </h1>
-                        <div class="m-2 p-4 lg:hidden">
+                        <div className="m-2 p-4 lg:hidden">
                             <img
-                                class="rounded-md max-w-full max-h-full"
+                                className="rounded-md max-w-full max-h-full"
                                 src={profileImage}
                                 alt="HM Hady"
                             />
                         </div>
-                        <p class="text-lg text-gray-700 leading-relaxed max-w-prose mx-auto">
+                        <p className="text-lg text-gray-700 leading-relaxed max-w-prose mx-auto">
                             I am HM Hady, an artist and architecture student at Bangladesh
                             University, Dhaka. My practice is rooted in acrylic, watercolor,
                             and pencil, exploring spirituality, emotion, and the expressive
@@ -31,18 +31,18 @@ const About = () => {
                             spirituality, and visual harmony converge, creating both resonance
                             and connection.
                         </p>
-                        <div class="flex items-center justify-center mt-2">
+                        <div className="flex items-center justify-center mt-2">
                             <Link
                                 to="/gallery"
-                                class="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-lg mt-8 text-lg hover:bg-sky-700 transition-colors duration-300"
+                                className="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-lg mt-8 text-lg hover:bg-sky-700 transition-colors duration-300"
                             >
                                 See Gallery
                             </Link>
                         </div>
                     </div>
-                    <div class="m-2 p-4 hidden lg:block">
+                    <div className="m-2 p-4 hidden lg:block">
                         <img
-                            class="rounded-3xl max-w-full max-h-full p-4"
+                            className="rounded-3xl max-w-full max-h-full p-4"
                             src={profileImage}
                             alt="HM Hady"
                         />

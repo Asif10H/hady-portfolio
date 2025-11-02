@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import artData from "../assets/data/artData.json";
 import ScrollToTop from "../components/ScrollToTop";
 const images = import.meta.glob(
-  "../assets/images/gallery/*.{jpg,jpeg,png,svg}",
+  "../assets/images/home-image/*.{jpg,jpeg,png,svg}",
   { eager: true }
 );
 const imageList = Object.values(images).map((img) => img.default);
@@ -28,7 +28,7 @@ const Home = () => {
             <img
               src={profileImage}
               alt="HM Hady"
-              className="w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-xl border-8 border-white"
+              className="w-80 h-80 lg:w-96 lg:h-96  rounded-full object-cover shadow-md border-8 border-white"
             />
           </div>
           <div className="text-center lg:text-left">
@@ -100,16 +100,14 @@ const Home = () => {
               >
                 <div className="w-full h-56">
                   <img
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full p-3 object-cover rounded-2xl"
                     src={art.image}
                     alt={art.imageName}
                   />
+                    
                 </div>
-                <div className="p-6 flex flex-col">
-                  <h1 className="text-2xl font-medium">{art.imageName}</h1>
-                  <p className="text-slate-500 text-lg mt-3">
-                    {art.imageDescription}
-                  </p>
+                <div className="p-3 text-center flex flex-col">
+                      <h1 className=" text-2xl font-medium capitalize">{art.imageName}</h1>
                 </div>
               </motion.div>
             ))}

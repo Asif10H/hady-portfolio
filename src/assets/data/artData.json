@@ -1,62 +1,110 @@
 [
     {
-        "imageName": "Sunset Over Hills",
-        "imageDescription": "A calming view of the sunset over green hills."
+        "imageName": "the red city of whirlers",
+        "imageDescription": "picture description",
+        "imageSize": "20×24 inches",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "Ocean Breeze",
-        "imageDescription": "Feel the fresh ocean air and the sound of waves."
+        "imageName": "woven sky",
+        "imageDescription": "picture description",
+        "imageSize": "24×36 inches",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "City Lights",
-        "imageDescription": "Bright lights of a sleepless city night."
+        "imageName": "rooh-e-quds",
+        "imageDescription": "picture description",
+        "imageSize": "12×18 inches",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "Forest Walk",
-        "imageDescription": "A peaceful walk through the deep forest."
+        "imageName": "eclipse of emotions",
+        "imageDescription": "picture description",
+        "imageSize": "a3 paper",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "Golden Fields",
-        "imageDescription": "The warm tones of nature captured in one frame."
+        "imageName": "the whirling dervish",
+        "imageDescription": "picture description",
+        "imageSize": "11×15 inches",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "Sunset Over Hills",
-        "imageDescription": "A calming view of the sunset over green hills."
+        "imageName": "kazemori otera",
+        "imageDescription": "picture description",
+        "imageSize": "11×15 inches",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "Ocean Breeze",
-        "imageDescription": "Feel the fresh ocean air and the sound of waves."
+        "imageName": "madinatul munawwara",
+        "imageDescription": "picture description",
+        "imageSize": "a3 canvas paper",
+        "imageType": "acrylic painting"
     },
     {
-        "imageName": "City Lights",
-        "imageDescription": "Bright lights of a sleepless city night."
+        "imageName": "payitaht",
+        "imageDescription": "picture description",
+        "imageSize": "a3 canvas paper",
+        "imageType": "watercolour painting"
     },
     {
-        "imageName": "Forest Walk",
-        "imageDescription": "A peaceful walk through the deep forest."
+        "imageName": "pixel",
+        "imageDescription": "picture description",
+        "imageSize": "a3 paper",
+        "imageType": "pencil sketch"
     },
     {
-        "imageName": "City Lights",
-        "imageDescription": "Bright lights of a sleepless city night."
+        "imageName": "urban veins",
+        "imageDescription": "picture description",
+        "imageSize": "a2 paper",
+        "imageType": "pencil sketch"
     },
     {
-        "imageName": "Forest Walk",
-        "imageDescription": "A peaceful walk through the deep forest."
+        "imageName": "neurographic art",
+        "imageDescription": "picture description",
+        "imageSize": "a4 pagr",
+        "imageType": "pencil colour"
     },
     {
-        "imageName": "Golden Fields",
-        "imageDescription": "The warm tones of nature captured in one frame."
+        "imageName": "allama iqbal",
+        "imageDescription": "picture description",
+        "imageSize": "a3 page",
+        "imageType": "watercolour painting"
     },
     {
-        "imageName": "Sunset Over Hills",
-        "imageDescription": "A calming view of the sunset over green hills."
+        "imageName": "pencil sketch",
+        "imageDescription": "picture description",
+        "imageSize": "10×10 inches",
+        "imageType": "pencil sketch"
     },
     {
-        "imageName": "Ocean Breeze",
-        "imageDescription": "Feel the fresh ocean air and the sound of waves."
+        "imageName": "winter arc",
+        "imageDescription": "picture description",
+        "imageSize": "a3 canvas paper",
+        "imageType": "watercolour painting"
     },
     {
-        "imageName": "City Lights",
-        "imageDescription": "Bright lights of a sleepless city night."
+        "imageName": "taste of drops",
+        "imageDescription": "picture description",
+        "imageSize": "10×12 inches",
+        "imageType": "acrylic painting"
+    },
+    {
+        "imageName": "the argument",
+        "imageDescription": "picture description",
+        "imageSize": "10×10 inches",
+        "imageType": "pencil sketch"
+    },
+    {
+        "imageName": "human pencil sketch",
+        "imageDescription": "picture description",
+        "imageSize": "a3 paper",
+        "imageType": "pencil sketch"
+    },
+    {
+        "imageName": "sketch of mirza ghalib",
+        "imageDescription": "picture description",
+        "imageSize": "a3 paper",
+        "imageType": "pencil sketch"
     }
 ]

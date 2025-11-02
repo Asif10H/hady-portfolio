@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer.jsx";
 const App = () => {
   return (
-    <div>
+    <div className="pt-20">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

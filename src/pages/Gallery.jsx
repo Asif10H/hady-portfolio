@@ -22,7 +22,7 @@ const galleryArts = imageList.map((image, index) => ({
 
 const Available = () => {
   return (
-    <div className="px-8">
+    <div className="px-4 my-8">
       <div className="my-12">
         <h1 className="text-3xl font-bold text-center mb-8">
           <span className="bg-sky-600 rounded-md text-white px-3 py-1">Hady's</span>
@@ -54,7 +54,7 @@ const Available = () => {
           >
             <div className="w-full h-56">
               <img
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full p-3 object-cover rounded-2xl"
                 src={art.image}
                 alt={art.imageName}
               />

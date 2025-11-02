@@ -23,7 +23,7 @@ const availableArts = imageList.map((image, index) => ({
 
 const Available = () => {
   return (
-    <div className="px-8">
+    <div className="px-4 my-8">
       <div className="my-12">
         <h1 className="text-4xl font-bold text-center text-gray-800">
           Original Art for Your Space
@@ -54,7 +54,7 @@ const Available = () => {
           >
             <div className="w-full h-56">
               <img
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full p-3 object-cover rounded-2xl"
                 src={art.image}
                 alt={art.imageName}
               />
