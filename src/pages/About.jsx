@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/images/personal-image/hadi-pro.jpeg";
+import profileImage from "../assets/images/personal-image/hadi-pro-0.jpeg";
 import { Link } from "react-router-dom";
 
 const About = () => {

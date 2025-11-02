@@ -46,10 +46,9 @@ const Contact = () => {
         <div
           className={`fixed top-6 right-6 px-6 py-3 rounded-lg shadow-lg transform transition-all duration-500 z-50
             ${isError ? "bg-red-600 text-white" : "bg-sky-600 text-white"} 
-            ${
-              showMessage
-                ? "translate-x-0 opacity-100"
-                : "translate-x-10 opacity-0"
+            ${showMessage
+              ? "translate-x-0 opacity-100"
+              : "translate-x-10 opacity-0"
             }`}
         >
           {message}

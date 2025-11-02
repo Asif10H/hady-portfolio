@@ -12,7 +12,6 @@ const images = import.meta.glob(
 );
 
 const imageList = Object.values(images).map((img) => img.default);
-
 const galleryArts = imageList.map((image, index) => ({
   id: index + 1,
   image,
