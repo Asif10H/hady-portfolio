@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 import availableData from "../assets/data/availableData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const image = import.meta.glob(
   "../assets/images/available/*.{jpg,jpeg,png,svg}",
@@ -52,13 +54,24 @@ const Available = () => {
             }}
             className="shadow-lg rounded-xl overflow-hidden flex flex-col bg-white hover:shadow-2xl"
           >
-            <div className="w-full h-56">
+            {/* <div className="w-full h-56 p-3">
               <img
                 className="w-full h-full p-3 object-cover rounded-2xl"
                 src={art.image}
                 alt={art.imageName}
               />
+            </div> */}
+            <div className="w-full h-56 p-3">
+              <LazyLoadImage
+                className="w-full h-full object-cover rounded-2xl"
+                src={art.image}
+                alt={art.imageName}
+                effect="blur"
+                width="100%"
+                height="100%"
+              />
             </div>
+
             <div className="p-6 flex flex-col">
               <h1 className="text-2xl font-medium">{art.imageName}</h1>
               <p className="text-slate-500 text-lg mt-3">
@@ -75,7 +88,7 @@ const Available = () => {
           </motion.div>
         ))}
       </div>
-       <ScrollToTop />
+      <ScrollToTop />
     </div>
   );
 };

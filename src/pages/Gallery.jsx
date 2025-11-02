@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 import homeData from "../assets/data/homeData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const images = import.meta.glob(
   "../assets/images/gallery/*.{jpg,jpeg,png,svg}",
@@ -17,8 +19,7 @@ const galleryArts = imageList.map((image, index) => ({
   imageName: homeData[index]?.imageName || `demo-name  ${index + 1}`,
   imageDescription:
     homeData[index]?.imageDescription || "this is demo description .",
-    imageType:
-    homeData[index]?.imageType || "this is demo image type .",
+  imageType: homeData[index]?.imageType || "this is demo image type .",
   buttonText: "Buy Now",
 }));
 
@@ -27,7 +28,9 @@ const Available = () => {
     <div className="px-4 my-8">
       <div className="my-12">
         <h1 className="text-3xl font-bold text-center mb-8">
-          <span className="bg-sky-600 rounded-md text-white px-3 py-1">Hady's</span>
+          <span className="bg-sky-600 rounded-md text-white px-3 py-1">
+            Hady's
+          </span>
           <span className="px-3">Art Gallery</span>
         </h1>
       </div>
@@ -54,11 +57,21 @@ const Available = () => {
             }}
             className="shadow-lg rounded-xl overflow-hidden flex flex-col bg-white"
           >
-            <div className="w-full h-56">
+            {/* <div className="w-full h-56 p-3">
               <img
-                className="w-full h-full p-3 object-cover rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl"
                 src={art.image}
                 alt={art.imageName}
+              />
+            </div> */}
+            <div className="w-full h-56 p-3">
+              <LazyLoadImage
+                className="w-full h-full object-cover rounded-2xl"
+                src={art.image}
+                alt={art.imageName}
+                effect="blur"
+                width="100%"
+                height="100%"
               />
             </div>
             <div className="p-6 flex flex-col">

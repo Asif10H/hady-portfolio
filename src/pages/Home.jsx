@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import homeData from "../assets/data/homeData.json";
 import ScrollToTop from "../components/ScrollToTop";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const images = import.meta.glob(
   "../assets/images/home-image/*.{jpg,jpeg,png,svg}",
   { eager: true }
@@ -107,13 +110,23 @@ const Home = () => {
                 }}
                 className="shadow-lg rounded-xl overflow-hidden flex flex-col bg-white"
               >
-                <div className="w-full h-56">
+                {/* <div className="w-full h-56">
                   <img
                     className="w-full h-full p-3 object-cover rounded-2xl"
                     src={art.image}
                     alt={art.imageName}
                   />
                     
+                </div> */}
+                <div className="w-full h-56 p-3">
+                  <LazyLoadImage
+                    className="w-full h-full object-cover rounded-2xl"
+                    src={art.image}
+                    alt={art.imageName}
+                    effect="blur" 
+                    width="100%"  
+                    height="100%"
+                  />
                 </div>
                 <div className="p-3 text-center flex flex-col">
                       <h1 className=" text-2xl font-medium capitalize">{art.imageName}</h1>
