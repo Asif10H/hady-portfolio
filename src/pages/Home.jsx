@@ -10,15 +10,15 @@ const images = import.meta.glob(
 );
 // const imageList = Object.values(images).map((img) => img.default);
 const unsortedImageList = Object.values(images).map((img) => img.default);
-// console.log(unsortedImageList);
-
 const imageList = unsortedImageList.sort((a, b) => {
-  const numA = parseInt(a.match(/hom-(\d+)\./)[1]);
-  const numB = parseInt(b.match(/hom-(\d+)\./)[1]);
+  const matchA = a.match(/hom-(\d+)/);
+  const matchB = b.match(/hom-(\d+)/);
+  if (!matchA) return 1;
+  if (!matchB) return -1;
+  const numA = parseInt(matchA[1]);
+  const numB = parseInt(matchB[1]);
   return numA - numB;
 });
-// console.log("hello");
-// console.log(imageList);
 const galleryArts = imageList.map((image, index) => ({
   id: index + 1,
   image,
