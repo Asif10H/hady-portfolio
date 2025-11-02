@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
-import artData from "../assets/data/artData.json";
+import homeData from "../assets/data/homeData.json";
 
 const images = import.meta.glob(
   "../assets/images/gallery/*.{jpg,jpeg,png,svg}",
@@ -14,9 +14,11 @@ const imageList = Object.values(images).map((img) => img.default);
 const galleryArts = imageList.map((image, index) => ({
   id: index + 1,
   image,
-  imageName: artData[index]?.imageName || `demo-name  ${index + 1}`,
+  imageName: homeData[index]?.imageName || `demo-name  ${index + 1}`,
   imageDescription:
-    artData[index]?.imageDescription || "this is demo description .",
+    homeData[index]?.imageDescription || "this is demo description .",
+    imageType:
+    homeData[index]?.imageType || "this is demo image type .",
   buttonText: "Buy Now",
 }));
 
@@ -64,6 +66,7 @@ const Available = () => {
               <p className="text-slate-500 text-lg mt-3">
                 {art.imageDescription}
               </p>
+              <p className="text-slate-500 text-lg mt-3 ">{art.imageType}</p>
             </div>
           </motion.div>
         ))}

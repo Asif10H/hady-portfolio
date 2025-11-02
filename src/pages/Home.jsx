@@ -2,20 +2,29 @@ import React from "react";
 import profileImage from "../assets/images/personal-image/hadi-pro.jpeg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import artData from "../assets/data/artData.json";
+import homeData from "../assets/data/homeData.json";
 import ScrollToTop from "../components/ScrollToTop";
 const images = import.meta.glob(
   "../assets/images/home-image/*.{jpg,jpeg,png,svg}",
   { eager: true }
 );
-const imageList = Object.values(images).map((img) => img.default);
+// const imageList = Object.values(images).map((img) => img.default);
+const unsortedImageList = Object.values(images).map((img) => img.default);
+// console.log(unsortedImageList);
 
+const imageList = unsortedImageList.sort((a, b) => {
+  const numA = parseInt(a.match(/hom-(\d+)\./)[1]);
+  const numB = parseInt(b.match(/hom-(\d+)\./)[1]);
+  return numA - numB;
+});
+// console.log("hello");
+// console.log(imageList);
 const galleryArts = imageList.map((image, index) => ({
   id: index + 1,
   image,
-  imageName: artData[index]?.imageName || `demo-name  ${index + 1}`,
+  imageName: homeData[index]?.imageName || `demo-name  ${index + 1}`,
   imageDescription:
-    artData[index]?.imageDescription || "this is demo description .",
+    homeData[index]?.imageDescription || "this is demo description .",
   buttonText: "Buy Now",
 }));
 
