@@ -54,7 +54,7 @@ const Available = () => {
               scale: 0.99,
               transition: { duration: 0.15 },
             }}
-            className="shadow-lg rounded-xl overflow-hidden flex flex-col bg-white"
+            className="shadow-card rounded-xl overflow-hidden flex flex-col bg-white"
           >
             {/* <div className="w-full h-56 p-3">
               <img

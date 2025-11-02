@@ -36,6 +36,11 @@ npm install hamburger-react
 ```bash
 npm install framer-motion
 ```
+## Modern Mobile Touch Slider
+```bash
+npm install swiper
+```
+
 
 ---
 
@@ -46,7 +51,7 @@ npm install framer-motion
 - **Animation:** Framer Motion  
 - **Icons:** React Icons + Font Awesome  
 - **Menu:** Hamburger React  
-
+- **Slide:** swiper 
 ---
 
  **Author:** Habibullah Md Asif  

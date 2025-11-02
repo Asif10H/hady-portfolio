@@ -11,6 +11,8 @@ import carouselImg1 from "../assets/images/personal-image/hadi-pro-1.jpg";
 import carouselImg2 from "../assets/images/personal-image/hadi-pro-2.jpg";
 import carouselImg3 from "../assets/images/personal-image/hadi-pro-3.jpg";
 import carouselImg4 from "../assets/images/personal-image/hadi-pro-4.jpg";
+import carouselImg5 from "../assets/images/personal-image/hadi-pro-5.jpeg";
+
 
 
 const images = import.meta.glob(
@@ -60,7 +62,7 @@ const Home = () => {
       ? galleryArts
       : galleryArts.filter((art) => art.type === filter);
   
-  const carouselImages = [carouselImg0, carouselImg1, carouselImg2, carouselImg3, carouselImg4];
+  const carouselImages = [carouselImg0, carouselImg5, carouselImg2, carouselImg3, carouselImg4, carouselImg1];
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -256,11 +258,11 @@ const Home = () => {
                 scale: 0.99,
                 transition: { duration: 0.15 },
               }}
-              className="relative shadow-lg rounded-xl overflow-hidden flex flex-col bg-white group"
+              className="relative shadow-card rounded-xl overflow-hidden flex flex-col bg-white group"
             >
-              <div className="w-full h-56">
+              <div className="w-full h-56 p-3">
                 <LazyLoadImage
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded"
                   src={art.image}
                   alt={art.imageName}
                   effect="blur"

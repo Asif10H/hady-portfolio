@@ -20,7 +20,7 @@ const Navbar = () => {
         {[
           { to: "/", label: "Home" },
           { to: "/gallery", label: "Gallery" },
-          { to: "/available", label: "Available" },
+          { to: "/shop", label: "Shop" },
           { to: "/about", label: "About" },
           { to: "/contact", label: "Contact" },
         ].map((item) => (
@@ -49,7 +49,7 @@ const Navbar = () => {
           {[
             { to: "/", label: "Home" },
             { to: "/gallery", label: "Gallery" },
-            { to: "/available", label: "Available" },
+            { to: "/shop", label: "Shop" },
             { to: "/about", label: "About" },
             { to: "/contact", label: "Contact" },
           ].map((item) => (

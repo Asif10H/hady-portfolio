@@ -5,6 +5,5 @@
     font-family: Saira, sans-serif;
 }
 @theme{
-    --color-primary: #6366f1;
-    --color-secondary:#1f2937;
+    --shadow-card: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
