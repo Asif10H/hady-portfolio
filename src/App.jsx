@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer.jsx";
+import ArtDetails from "./pages/ArtDetails";
 const App = () => {
   return (
     <div className="pt-20">
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/available" element={<Available />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+         <Route path="/art-details/:id" element={<ArtDetails />} />
       </Routes>
       <Footer/>
     </div>
